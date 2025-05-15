@@ -1,21 +1,87 @@
-
 <!DOCTYPE html>
 <html lang="es">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Mente y Billete - PDF Gratis</title>
-    <style>
-        body { font-family: Arial, sans-serif; background: #111; color: #fff; margin: 0; padding: 0; display: flex; flex-direction: column; align-items: center; justify-content: center; height: 100vh; }
-        h1 { font-size: 2em; margin-bottom: 0.5em; }
-        p { font-size: 1.2em; margin-bottom: 1em; text-align: center; max-width: 500px; }
-        a.button { background: #0f0; color: #000; padding: 1em 2em; text-decoration: none; border-radius: 8px; font-weight: bold; }
-        a.button:hover { background: #0c0; }
-    </style>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Mente y Billete - Revoluciona tu dinero</title>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600&family=Inter:wght@400;600&display=swap" rel="stylesheet">
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+    body {
+      font-family: 'Inter', sans-serif;
+      background: linear-gradient(to right, #0f2027, #203a43, #2c5364);
+      color: #fff;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      min-height: 100vh;
+      padding: 2rem;
+    }
+    h1 {
+      font-family: 'Playfair Display', serif;
+      font-size: 2.8rem;
+      text-align: center;
+      margin-bottom: 1rem;
+      color: #f6c90e;
+      animation: fadeIn 1s ease-in-out;
+    }
+    p {
+      max-width: 600px;
+      text-align: center;
+      margin-bottom: 2rem;
+      font-size: 1.1rem;
+      animation: fadeIn 1.5s ease-in-out;
+    }
+    form {
+      display: flex;
+      flex-direction: column;
+      gap: 1rem;
+      width: 100%;
+      max-width: 400px;
+      animation: fadeIn 2s ease-in-out;
+    }
+    input[type="email"] {
+      padding: 0.8rem;
+      border: none;
+      border-radius: 5px;
+      font-size: 1rem;
+    }
+    button {
+      padding: 0.8rem;
+      border: none;
+      background-color: #f6c90e;
+      color: #000;
+      font-weight: bold;
+      border-radius: 5px;
+      cursor: pointer;
+      transition: background 0.3s;
+    }
+    button:hover {
+      background-color: #ffe75a;
+    }
+    .footer {
+      margin-top: 3rem;
+      font-size: 0.9rem;
+      color: #aaa;
+    }
+    @keyframes fadeIn {
+      from { opacity: 0; transform: translateY(20px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+  </style>
 </head>
 <body>
-    <h1>Descarga el PDF Gratuito</h1>
-    <p>Los secretos emocionales y mentales detrás del dinero. Aprende a desbloquear tu mente para atraer abundancia.</p>
-    <a href="#" class="button">¡Descargar ahora!</a>
+  <h1>Despierta tu Mente. Transforma tu Dinero.</h1>
+  <p>Descarga gratis el PDF con los 7 principios emocionales que te harán tomar el control de tu dinero desde adentro hacia afuera. Una guía radical y directa para jóvenes que quieren romper con el sistema.</p>
+  <form action="https://app.systeme.io/your-form-endpoint" method="POST">
+    <input type="email" name="email" placeholder="Tu mejor correo" required />
+    <button type="submit">Descargar ahora</button>
+  </form>
+  <div class="footer">@menteybillete - Revolución desde la conciencia financiera</div>
 </body>
 </html>

@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>7 Claves para Pensar como Millonario - MenteyBillete</title>
+<style>
+  body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background: #f5f8fa;
+    margin: 0; padding: 0;
+    color: #222;
+  }
+  .container {
+    max-width: 480px;
+    margin: 40px auto;
+    background: white;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 0 20px #ddd;
+  }
+  h1 {
+    color: #0a3d62;
+    font-weight: 900;
+    font-size: 1.8rem;
+    margin-bottom: 10px;
+  }
+  h2 {
+    font-weight: 600;
+    font-size: 1.2rem;
+    color: #0b658f;
+    margin-top: 0;
+    margin-bottom: 20px;
+  }
+  p {
+    font-size: 1rem;
+    line-height: 1.5;
+    margin-bottom: 20px;
+  }
+  ul {
+    margin: 0 0 25px 20px;
+    color: #333;
+  }
+  li {
+    margin-bottom: 10px;
+  }
+  label {
+    display: block;
+    margin-bottom: 6px;
+    font-weight: 600;
+  }
+  input[type="text"], input[type="email"] {
+    width: 100%;
+    padding: 10px 12px;
+    font-size: 1rem;
+    margin-bottom: 15px;
+    border: 2px solid #0b658f;
+    border-radius: 6px;
+    outline: none;
+  }
+  input[type="submit"] {
+    background: #0b658f;
+    color: white;
+    font-weight: 700;
+    padding: 12px 0;
+    font-size: 1.2rem;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    width: 100%;
+    transition: background 0.3s ease;
+  }
+  input[type="submit"]:hover {
+    background: #094a61;
+  }
+  .footer {
+    font-size: 0.8rem;
+    color: #666;
+    margin-top: 30px;
+    text-align: center;
+  }
+  .post-message {
+    background: #dff0d8;
+    border: 1px solid #d0e9c6;
+    color: #3c763d;
+    padding: 15px;
+    border-radius: 6px;
+    text-align: center;
+    margin-top: 20px;
+    display: none;
+  }
+</style>
+</head>
+<body>
+
+<div class="container">
+  <h1>Mata al pobre emocional que vive en tu cabeza</h1>
+  <h2>Descarga GRATIS el PDF: <br><strong>7 claves para pensar como millonario (aunque estés en ceros)</strong></h2>
+  
+  <p>Si tu mente no cambia, tu cuenta tampoco.<br>
+  Este PDF no es motivación barata.<br>
+  Es una bomba para reprogramar tu mentalidad y dejar de vivir desde la carencia.<br>
+  ¿Te atreves a leer lo que nadie te dijo?</p>
+  
+  <ul>
+    <li>7 claves directas para matar al pobre emocional que te sabotea</li>
+    <li>Hacks mentales para empezar a pensar como millonario (sin humo)</li>
+    <li>Preguntas bomba para desbloquear tu conciencia financiera</li>
+    <li>Un PDF que te va a doler, pero también te va a encender</li>
+  </ul>
+  
+  <form id="leadForm">
+    <label for="name">Nombre:</label>
+    <input type="text" id="name" name="name" placeholder="Tu nombre" required />
+    
+    <label for="email">Email:</label>
+    <input type="email" id="email" name="email" placeholder="Tu correo" required />
+    
+    <input type="submit" value="¡Quiero el PDF ahora! 🔥" />
+  </form>
+  
+  <div class="post-message" id="postMessage">
+    <p>¡Listo!<br>
+    Tu PDF ya está en camino a tu correo.<br>
+    Revisa tu bandeja de entrada o spam.<br>
+    Y recuerda:<br>
+    💥 Si no lo aplicas, no sirve.<br>
+    <strong>Nos vemos en la cima.</strong></p>
+  </div>
+
+  <p class="footer">Tu información está segura. No te mandamos spam, solo contenido que vale oro.<br>Somos <strong>@menteybillete</strong>, no gurús.</p>
+</div>
+
+<script>
+  const form = document.getElementById('leadForm');
+  const postMessage = document.getElementById('postMessage');
+
+  form.addEventListener('submit', function(e) {
+    e.preventDefault();
+    // Aquí puedes agregar integración con tu sistema de email marketing (Mailchimp, Systeme.io, etc.)
+    form.style.display = 'none';
+    postMessage.style.display = 'block';
+  });
+</script>
+
+</body>
+</html>
